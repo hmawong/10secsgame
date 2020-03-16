@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center">10 Secs Calculation Game</h1>
+      <div class="row">
+        <div class="col-12 text-center">
+          <p class="text-center">Timer:</p>
+          <p><span id="timer">10</span> seconds left</p>
+          <button class="btn btn-info btn-sm game" id="start">Start the Game!</button>
+        </div>
+        <br>
+        <div class="col-12 text-center">
+          <p class="text-center">Question</p>
+          <p><span id="firstQ"></span> + <span id="secondQ"></span></p>
+          <form class="col-12 text-center" id="answer">
+            <span>Your answer: </span>
+            <input class="mx-2" name="num" type="number" id="answerbox" onfocus="this.value=''" placeholder="Type your answer."/>
+          </form>
+        </div>
+        <br>
+        <div class="col-12 text-center">
+          <p class="text-center" id="correct"></p>
+          <p class="text-center">Current score: <span id="score">0</span></p>
+          <p class="text-center">High Score: <span id="highScore"></span></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
